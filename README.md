@@ -1,2 +1,2 @@
-# hackMcWics
-McWics hackathon 2023
+# coverify.ai
+*A project built at hackMcWICS '23*
