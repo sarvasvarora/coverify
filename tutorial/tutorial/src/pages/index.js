@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className="bg-blue-700">
+        <div className="bg-red-400">
           <p>
             Get started by editing&nbsp;
             <code className={styles.code}>src/pages/index.js</code>
