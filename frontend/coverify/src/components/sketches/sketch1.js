@@ -17,6 +17,7 @@ let mode,modes;
 export default function Sketch1(props) {
     const setup = (p5, canvasParentRef) => {
         p5.createCanvas(400, 400).parent(canvasParentRef);
+        p5.pixelDensity(4);
         diffusionArray = [];
 
         let colorScheme = {
@@ -157,6 +158,7 @@ export default function Sketch1(props) {
                 // col.setAlpha(diffusionArray[i][j][k] * 255);
                 col =p5.color(diffusionArray[i][j][0], diffusionArray[i][j][1], diffusionArray[i][j][2])
                 p5.stroke(col);
+                p5.strokeWeight(2);
                 p5.point(i, j);
             }
         }
