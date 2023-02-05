@@ -6,13 +6,9 @@ import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 import React from "react";
-import dynamic from 'next/dynamic'
-import sketch1 from 'components/sketches'
+import Sketch1 from "../components/sketches/sketch1"
 
-// Will only import `react-p5` on client-side
-const Sketch = dynamic(() => import('react-p5').then((mod) => mod.default), {
-  ssr: false,
-})
+
 
 export default function Home() {
   return (
@@ -24,12 +20,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className="bg-red-400">
+        <div className="bg-green-400">
           <p>
             Get started by editing&nbsp;
             <code className={styles.code}>src/pages/index.js</code>
           </p>
-          {/* <Sketch setup={setup} draw={draw} />; */}
+          <Sketch1 />
         </div>
       </main>
     </>
