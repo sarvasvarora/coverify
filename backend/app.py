@@ -3,6 +3,7 @@ import sys
 sys.path.insert(0, "src/") 
 
 from fastapi import FastAPI, Response
+from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 import zipfile
 import os
@@ -17,6 +18,22 @@ load_dotenv()
 
 # create the backend API app
 app = FastAPI()
+
+# enable CORS
+origins = [
+    "http://localhost",
+    "http://localhost:8080",
+    "http://localhost:8000"
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 # function to zip files
 def generate_zip(bytesio_list):
