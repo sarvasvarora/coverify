@@ -6,6 +6,7 @@ import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 import React from "react";
+import LoginButton from '../loginButton'
 
 
 
@@ -18,7 +19,7 @@ export default function Header() {
                 <Image src="/images/CoverifyLogo.png" width={200} height={80}/>
             </div>
             <ul className="flex-items-center">
-                <li>Login</li>
+                <li> <LoginButton/> </li>
             </ul>
         </nav>
     </div>

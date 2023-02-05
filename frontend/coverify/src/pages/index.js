@@ -8,6 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 import React from "react";
 import Header from "../components/navbar/navbar"
 import Sketch1 from "../components/sketches/sketch1"
+import SecondaryButton from '@/components/secondaryButton'
 
 
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
           </p>
           <Sketch1 />
         </div> */}
+        <SecondaryButton />
         </section>
       </main>
     </>
