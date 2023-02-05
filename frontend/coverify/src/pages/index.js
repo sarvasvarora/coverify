@@ -10,10 +10,23 @@ import React from "react";
 import Header from "../components/navbar/navbar"
 import Sketch1 from "../components/sketches/sketch1"
 import SecondaryButton from '@/components/secondaryButton'
+import Generate from '@/components/generate'
 
+
+// const setPermit = (e) => {
+//   if (e.target.className.includes('mobile')) {
+//       setPermit(true)
+//   } else if (e.target.className.includes('desktop')){
+//       setPermit(false)
+//   }
+// }
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
+  const [permit, setPermit] = useState(true) 
+  // console.log("permit", permit);
+
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Header darkMode={darkMode} setDarkMode={setDarkMode}/>
@@ -29,6 +42,14 @@ export default function Home() {
           <h3 className="font-Montserrat text-lg">A paragraph.</h3>
         <SecondaryButton />
         </section>
+
+
+
+      {/* <div className={permit === false ? <Generate /> : 'remove-display'}></div>
+     */}
+  
+     <div>{permit ? <Generate/> : null }</div>
+   
       </main>
     </div>
   )
