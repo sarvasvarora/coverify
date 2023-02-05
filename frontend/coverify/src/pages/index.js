@@ -39,7 +39,7 @@ export default function Home() {
       <main className="bg-[#87cefa] dark:bg-indigo-900">
         <section className="min-h-screen p-60">
           <h1 className="py-2 font-Montserrat font-bold text-6xl dark:text-white">Create beautiful playlist covers within minutes.</h1>
-          <h3 className="py-5 font-Montserrat text-lg dark:text-white">Coverify asks users to login to their Spotify accounts and select one of their playlists. Upon playlist selection, Coverify will analyze the playlist's overall mood and generate a brand new cover for it. Even more awesome, users can save their generated cover to add to their playlist and share with their friends!
+          <h3 className="py-5 font-Montserrat text-lg dark:text-white">Coverify asks users to login to their Spotify accounts and select one of their playlists. Upon playlist selection, Coverify will analyze the playlist's overall mood and generate a brand new cover for it. Even more awesome, users can save their generated cover to add to their playlist and share with their friends! Project created with love by McGill students Alexa, Sarvasv, Bengi, David.
 </h3>
         <SecondaryButton />
 
