@@ -36,10 +36,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-green-300 dark:bg-indigo-900">
+      <main className="bg-[#87cefa] dark:bg-indigo-900">
         <section className="min-h-screen p-60">
-          <h1 className="py-2 font-Montserrat font-bold text-6xl">Create beautiful playlist covers within minutes.</h1>
-          <h3 className="font-Montserrat text-lg">A paragraph.</h3>
+          <h1 className="py-2 font-Montserrat font-bold text-6xl dark:text-white">Create beautiful playlist covers within minutes.</h1>
+          <h3 className="py-5 font-Montserrat text-lg dark:text-white">A paragraph.</h3>
         <SecondaryButton />
         </section>
 

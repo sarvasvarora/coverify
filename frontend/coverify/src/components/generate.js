@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 import React from "react";
 import Header from "../components/navbar/navbar"
 import Sketch1 from "../components/sketches/sketch1"
-import SecondaryButton from '@/components/secondaryButton'
+import SecondaryButton from '@/components/buttons/secondaryButton'
 
 
 export default function Generate() {
