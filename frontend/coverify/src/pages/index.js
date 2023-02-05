@@ -7,26 +7,13 @@ const inter = Inter({ subsets: ['latin'] })
 
 import React from "react";
 import dynamic from 'next/dynamic'
+import sketch1 from 'components/sketches'
 
 // Will only import `react-p5` on client-side
 const Sketch = dynamic(() => import('react-p5').then((mod) => mod.default), {
   ssr: false,
 })
 
-let x = 50;
-let y = 50;
-  const setup = (p5, canvasParentRef) => {
-    // use parent to render the canvas in this ref
-    // (without that p5 will render the canvas outside of your component)
-    p5.createCanvas(100, 100).parent(canvasParentRef);
-    p5.noLoop();
-  };
-
-  const draw = (p5) => {
-    p5.background(0);
-    p5.ellipse(x, y, 70, 70);
-    x++;
-  };
 
 export default function Home() {
   return (
@@ -43,7 +30,7 @@ export default function Home() {
             Get started by editing&nbsp;
             <code className={styles.code}>src/pages/index.js</code>
           </p>
-          <Sketch setup={setup} draw={draw} />;
+          {/* <Sketch setup={setup} draw={draw} />; */}
         </div>
       </main>
     </>
