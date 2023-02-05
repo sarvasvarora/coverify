@@ -19,12 +19,12 @@ export default function Generate() {
     <main>
         <section className="bg-[#87cefa] px-60 py-10 ">
           <h1 className="py-2 font-Montserrat font-bold text-4xl">Step 1: Select Playlist</h1>
-          <h3 className="font-Montserrat text-lg">Some text.</h3>
+          <h3 className="font-Montserrat text-lg">Select your spotify playlist here! Reload the page for more iterations</h3>
         </section>
 
         <section className="bg-[#87cefa] px-60 py-10">
           <h1 className="py-2 font-Montserrat font-bold text-4xl">Step 2: Download your Cover!</h1>
-          <h3 className="font-Montserrat text-lg">Some text.</h3>
+          <h3 className="font-Montserrat text-lg">Click on the button below to download your cover.</h3>
           <div className="flex justify-center p-10"> 
             <Sketch1 /> 
           </div>
