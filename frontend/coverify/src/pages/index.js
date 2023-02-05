@@ -13,8 +13,6 @@ import Auth from "../spotify/authentication"
 
 
 export default function Home() {
-  const [token, setToken] = useState("")
-
   return (
     <>
       <Header />
@@ -32,7 +30,7 @@ export default function Home() {
           </p>
           <Sketch1 />
         </div>
-        <Auth token={token} setToken={setToken} />
+        <Auth />
       </main>
     </>
   )

@@ -6,7 +6,6 @@ import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 import React from "react";
-import { useEffect, useState } from "react";
 import Header from "../components/navbar/navbar"
 import Sketch1 from "../components/sketches/sketch1"
 import Auth from "../spotify/authentication"
@@ -14,8 +13,6 @@ import Playlists from '@/spotify/playlists'
 
 
 export default function Generator() {
-  const [token, setToken] = useState(window.localStorage.getItem("SPOTIFY_AUTH_TOKEN"));
-
   return (
     <>
       <Header />
@@ -33,8 +30,8 @@ export default function Generator() {
           </p>
           <Sketch1 />
         </div>
-        <Auth token={token} setToken={setToken}/>
-        <Playlists token={token} setToken={setToken} />
+        {/* <Auth /> */}
+        <Playlists />
       </main>
     </>
   )

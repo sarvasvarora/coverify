@@ -16,6 +16,7 @@
     "eslint-config-next": "13.1.6",
     "fs": "^0.0.1-security",
     "generate-random-string": "^1.0.2",
+    "JSON": "^1.0.0",
     "next": "13.1.6",
     "query-string": "^8.1.0",
     "react": "18.2.0",

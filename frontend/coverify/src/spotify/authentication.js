@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import Link from 'next/link'
 import querystring from "query-string";
 import generateRandomString from "generate-random-string";
 
@@ -13,8 +14,8 @@ let RESPONSE_TYPE = process.env.SPOTIFY_AUTH_RESPONSE_TYPE;
 
 let SCOPE = "playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public ugc-image-upload"
 
-export default function Auth(token, setToken) {
-    // const [token, setToken] = useState("")
+export default function Auth() {
+    const [token, setToken] = useState("")
 
     useEffect(() => {
         const hash = window.location.hash
@@ -50,9 +51,17 @@ export default function Auth(token, setToken) {
         <header className="App-header">
             <h1>Spotify React</h1>
             {!token ?
-                // <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URL}&response_type=${RESPONSE_TYPE}`}>Login to Spotify</a>
                 <a href={reqEndpoint}>Login to Spotify</a>
-                : <button onClick={logout}>Logout</button>}
+                // : <button onClick={logout}>Logout</button>
+
+                : <Link
+                    href={{
+                        pathname: '/cover-generator',
+                    }}
+                >
+                    Generate Playlist Covers!
+                </Link>
+            }
         </header>
         </div>
     );
