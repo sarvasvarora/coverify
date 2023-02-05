@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 import React from "react";
 import Header from "../components/navbar/navbar"
 import Sketch1 from "../components/sketches/sketch1"
-import SecondaryButton from '@/components/secondaryButton'
+import SecondaryButton from '@/components/buttons/secondaryButton'
 import Generate from '@/components/generate'
 
 
@@ -41,6 +41,7 @@ export default function Home() {
           <h1 className="py-2 font-Montserrat font-bold text-6xl dark:text-white">Create beautiful playlist covers within minutes.</h1>
           <h3 className="py-5 font-Montserrat text-lg dark:text-white">A paragraph.</h3>
         <SecondaryButton />
+
         </section>
 
 
@@ -48,7 +49,7 @@ export default function Home() {
       {/* <div className={permit === false ? <Generate /> : 'remove-display'}></div>
      */}
   
-     <div>{permit ? <Generate/> : null }</div>
+     <div>{permit ? <Generate /> : null }</div>
    
       </main>
     </div>
