@@ -8,6 +8,7 @@ import { useCallback } from 'react'
 const inter = Inter({ subsets: ['latin'] })
 
 import React from "react";
+import LoginButton from '../loginButton'
 
 export default function Header({ darkMode, setDarkMode }) {
     return (
@@ -18,14 +19,12 @@ export default function Header({ darkMode, setDarkMode }) {
                     <Image src="/images/CoverifyLogo.png" width={200} height={80}/>
                 </div>
                 {/* MENU ITEMS */}
-                <ul className="flex justify-between gap-10">
+                <ul className="flex justify-between gap-10 flex-items-center">
                     <li>
                         <BsFillMoonStarsFill onClick={() => {setDarkMode(!darkMode)}}
                         className="cursor-pointer text-2xl"/>
                     </li>
-                    <li>Login</li>
+                    <li> <LoginButton/> </li>
                 </ul>
             </nav>
         </div>
-  )
-}

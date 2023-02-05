@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 import React from "react";
 import Header from "../components/navbar/navbar"
 import Sketch1 from "../components/sketches/sketch1"
+import SecondaryButton from '@/components/secondaryButton'
 
 
 export default function Home() {
@@ -26,6 +27,14 @@ export default function Home() {
         <section className="min-h-screen p-60">
           <h1 className="py-2 font-Montserrat font-bold text-6xl">Create beautiful playlist covers within minutes.</h1>
           <h3 className="font-Montserrat text-lg">A paragraph.</h3>
+        {/* <div className="bg-green-400">
+          <p>
+            Get started by editing&nbsp;
+            <code className={styles.code}>src/pages/index.js</code>
+          </p>
+          <Sketch1 />
+        </div> */}
+        <SecondaryButton />
         </section>
 
         <section className="bg-blue-50 px-60 py-10">
