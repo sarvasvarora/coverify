@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 
@@ -8,10 +9,12 @@ const inter = Inter({ subsets: ['latin'] })
 import React from "react";
 import Header from "../components/navbar/navbar"
 import Sketch1 from "../components/sketches/sketch1"
-
+import Auth from "../spotify/authentication"
 
 
 export default function Home() {
+  const [token, setToken] = useState("")
+
   return (
     <>
       <Header />
@@ -29,6 +32,7 @@ export default function Home() {
           </p>
           <Sketch1 />
         </div>
+        <Auth token={token} setToken={setToken} />
       </main>
     </>
   )
