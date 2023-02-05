@@ -3,6 +3,7 @@
 # dependencies
 frontend/node_modules/*
 frontend/coverify/node_modules/*
+frontend/coverify/.next/*
 frontend/.next/*
 /.pnp
 .pnp.js

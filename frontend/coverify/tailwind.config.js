@@ -11,6 +11,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        MontrealNeue: ['MontrealNeue','sans'],
+        Montserrat: ['Montserrat', 'sans']
       }
     },
   },
