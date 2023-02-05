@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ['latin'] })
 import React from "react";
 import Header from "../components/navbar/navbar"
 import Sketch1 from "../components/sketches/sketch1"
-import SecondaryButton from '@/components/secondaryButton'
-import Generate from '@/components/generate'
+import Generate from "../components/buttons/loginButton"
+import SecondaryButton from "../components/buttons/secondaryButton"
 
 
 // const setPermit = (e) => {
