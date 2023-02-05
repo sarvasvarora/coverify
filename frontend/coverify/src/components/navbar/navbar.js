@@ -28,3 +28,5 @@ export default function Header({ darkMode, setDarkMode }) {
                 </ul>
             </nav>
         </div>
+    )
+}
