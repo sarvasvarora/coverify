@@ -12,16 +12,15 @@ import React from "react";
 export default function Header() {
   return (
     <div>
-        <nav className="p-10 flex justify-between items-center">
+        <nav className="p-10 shadow-lg flex justify-between items-center">
             {/* LOGO */}
             <div>
-                <Image src="/images/CoverifyLogo.png" width={300} height={80}/>
+                <Image src="/images/CoverifyLogo.png" width={200} height={80}/>
             </div>
             <ul className="flex-items-center">
                 <li>Login</li>
             </ul>
         </nav>
-     
     </div>
   )
 }
