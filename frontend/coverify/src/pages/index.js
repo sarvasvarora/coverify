@@ -27,26 +27,8 @@ export default function Home() {
         <section className="min-h-screen p-60">
           <h1 className="py-2 font-Montserrat font-bold text-6xl">Create beautiful playlist covers within minutes.</h1>
           <h3 className="font-Montserrat text-lg">A paragraph.</h3>
-        {/* <div className="bg-green-400">
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.js</code>
-          </p>
-          <Sketch1 />
-        </div> */}
         <SecondaryButton />
         </section>
-
-        <section className="bg-blue-50 px-60 py-10">
-          <h1 className="py-2 font-Montserrat font-bold text-4xl">Step 1: Select Playlist</h1>
-          <h3 className="font-Montserrat text-lg">Some text.</h3>
-        </section>
-
-        <section className="bg-blue-50 px-60 py-10">
-          <h1 className="py-2 font-Montserrat font-bold text-4xl">Step 2: Download your Cover!</h1>
-          <h3 className="font-Montserrat text-lg">Some text.</h3>
-        </section>
-
       </main>
     </div>
   )
