@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST={"../components/sketches/sketch1.js -> react-p5":{"id":"../components/sketches/sketch1.js -> react-p5","files":["static/chunks/node_modules_react-p5_build_index_js.js"]}}
